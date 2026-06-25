@@ -1,1 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sadnan — Robotics Researcher & AI Systems Builder</title>
+    <meta name="description" content="EEE Researcher at UAP Bangladesh. Autonomous robotics, ROS2, SLAM, and AI-integrated embedded systems. Seeking funded MSc / RA 2026–27." />
+    <meta property="og:title" content="Sadnan — Robotics Researcher" />
+    <meta property="og:description" content="Building intelligent systems that navigate the physical world." />
 
+    <!-- Font Awesome 6 (free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+    <!-- ─── NAV ─── -->
+    <nav id="main-nav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">S.</a>
+            <ul class="nav-links">
+                <li><a href="#about" data-section="about"><i class="fas fa-user" aria-hidden="true"></i> About</a></li>
+                <li><a href="#skills" data-section="skills"><i class="fas fa-code" aria-hidden="true"></i> Skills</a></li>
+                <li><a href="#projects" data-section="projects"><i class="fas fa-robot" aria-hidden="true"></i> Projects</a></li>
+                <li><a href="#research" data-section="research"><i class="fas fa-flask" aria-hidden="true"></i> Research</a></li>
+                <li><a href="#contact" data-section="contact"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Open to MSc / RA ↗</a>
+        </div>
+    </nav>
+
+    <!-- ─── HERO ─── -->
+    <section id="hero">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <div class="hero-eyebrow">
+                    <i class="fas fa-map-pin" aria-hidden="true"></i>
+                    EEE Researcher · Dhaka, Bangladesh
+                </div>
+                <h1 class="hero-name">Sadnan_Sajid</h1>
+                <p class="hero-title-line">
+                    Autonomous Robotics · AI Systems · <strong>Embedded Intelligence</strong>
+                </p>
+                <p class="hero-desc">
+                    I design and build end-to-end intelligent systems — from SLAM-based robot navigation on Jetson Nano hardware to AI-integrated automation pipelines that run on free-tier cloud infrastructure. Systems, not demos.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary"><i class="fas fa-arrow-right" aria-hidden="true"></i> View Projects</a>
+                    <a href="#research" class="btn btn-ghost"><i class="fas fa-microscope" aria-hidden="true"></i> Research →</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num"><i class="fas fa-microchip" aria-hidden="true"></i> 5+</span>
+                        <span class="stat-label mono">AI Systems</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num"><i class="fas fa-file-alt" aria-hidden="true"></i> 1</span>
+                        <span class="stat-label mono">Paper Ongoing</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num"><i class="fas fa-users" aria-hidden="true"></i> 3</span>
+                        <span class="stat-label mono">Team Members Led</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-num"><i class="fas fa-route" aria-hidden="true"></i> ROS2</span>
+                        <span class="stat-label mono">Primary Stack</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-canvas-wrap">
+                <canvas id="lidar"></canvas>
+                <span class="canvas-label mono"><i class="fas fa-satellite-dish" aria-hidden="true"></i> / slam · lidar point cloud</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── ABOUT ─── -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <span class="section-tag mono"><i class="fas fa-user-astronaut" aria-hidden="true"></i> about</span>
+                    <h2>From sensor data to autonomous decisions.</h2>
+                    <p>I'm a third-year EEE student and early-stage researcher at the University of Asia Pacific, Bangladesh. As team leader of a three-member robotics group, I'm building a fully autonomous mobile robot — from hardware integration on NVIDIA Jetson Nano to software orchestration with ROS2, SLAM Toolbox, and Nav2.</p>
+                    <p>My work doesn't stop at the robot. I build AI-integrated automation pipelines that bridge physical systems with cloud intelligence: weekly AI digest systems, academic automation with RAG, and live team monitoring dashboards. I treat free-tier infrastructure as a design constraint, not a limitation — and it makes me build smarter.</p>
+                    <p>I'm actively targeting <strong>fully funded MSc or Research Assistant positions</strong> in autonomous systems, embedded AI, and robotics for 2026–27.</p>
+                </div>
+                <div class="about-card reveal reveal-delay-1">
+                    <div class="profile-item">
+                        <span class="pi-label mono"><i class="fas fa-university" aria-hidden="true"></i> Institution</span>
+                        <span class="pi-value">University of Asia Pacific</span>
+                    </div>
+                    <div class="profile-item">
+                        <span class="pi-label mono"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Degree</span>
+                        <span class="pi-value">BSc Electrical &amp; Electronic Engineering, Year 3</span>
+                    </div>
+                    <div class="profile-item">
+                        <span class="pi-label mono"><i class="fas fa-bullseye" aria-hidden="true"></i> Research Focus</span>
+                        <span class="pi-value">Autonomous Navigation · SLAM · Embedded AI</span>
+                    </div>
+                    <div class="profile-item">
+                        <span class="pi-label mono"><i class="fas fa-microchip" aria-hidden="true"></i> Core Hardware</span>
+                        <span class="pi-value">Jetson Nano · LiDAR · Kinect · Arduino Mega</span>
+                    </div>
+                    <div class="profile-item">
+                        <span class="pi-label mono"><i class="fas fa-network-wired" aria-hidden="true"></i> Primary Middleware</span>
+                        <span class="pi-value">ROS2 · Nav2 · Zenoh · Tailscale</span>
+                    </div>
+                    <div class="profile-item">
+                        <span class="pi-label mono"><i class="fas fa-rocket" aria-hidden="true"></i> Currently Seeking</span>
+                        <span class="pi-value seeking"><i class="fas fa-circle" aria-hidden="true"></i> Funded MSc / RA 2026–27</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── SKILLS ─── -->
+    <section id="skills">
+        <div class="container">
+            <span class="section-tag mono reveal"><i class="fas fa-cog" aria-hidden="true"></i> technical skills</span>
+            <h2 class="reveal">The full stack, from silicon to the cloud.</h2>
+            <div class="skills-grid">
+                <div class="skill-group reveal">
+                    <span class="sg-label mono"><i class="fas fa-robot" aria-hidden="true"></i> Robotics &amp; Navigation</span>
+                    <div class="skill-tags">
+                        <span>ROS2</span><span>Nav2</span><span>SLAM Toolbox</span><span>Zenoh</span>
+                        <span>Gazebo</span><span>TF2</span><span>RViz2</span><span>micro-ROS</span><span>Tailscale VPN</span>
+                    </div>
+                </div>
+                <div class="skill-group reveal reveal-delay-1">
+                    <span class="sg-label mono"><i class="fas fa-microchip" aria-hidden="true"></i> Embedded &amp; Hardware</span>
+                    <div class="skill-tags">
+                        <span>NVIDIA Jetson Nano</span><span>Arduino Mega</span><span>Raspberry Pi</span>
+                        <span>LiDAR Sensor</span><span>Kinect RGB-D</span><span>C / C++</span>
+                        <span>TensorRT</span><span>I²C · SPI · UART</span><span>PlatformIO</span>
+                    </div>
+                </div>
+                <div class="skill-group reveal reveal-delay-2">
+                    <span class="sg-label mono"><i class="fas fa-brain" aria-hidden="true"></i> AI &amp; Machine Learning</span>
+                    <div class="skill-tags">
+                        <span>Python</span><span>PyTorch</span><span>Gemini API</span><span>Groq API</span>
+                        <span>LangChain</span><span>LoRA / PEFT</span><span>ChromaDB</span>
+                        <span>RAG Pipelines</span><span>YOLOv11</span><span>OpenCV</span>
+                    </div>
+                </div>
+                <div class="skill-group reveal reveal-delay-3">
+                    <span class="sg-label mono"><i class="fas fa-terminal" aria-hidden="true"></i> Dev Tools &amp; Infrastructure</span>
+                    <div class="skill-tags">
+                        <span>Git / GitHub</span><span>GitHub Actions</span><span>Docker</span>
+                        <span>Firebase</span><span>n8n</span><span>Google Scripts</span>
+                        <span>Linux / Ubuntu</span><span>LaTeX / Overleaf</span><span>Ollama</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── PROJECTS ─── -->
+    <section id="projects">
+        <div class="container">
+            <span class="section-tag mono reveal"><i class="fas fa-folder-open" aria-hidden="true"></i> projects</span>
+            <h2 class="reveal">Systems built, not just studied.</h2>
+
+            <div class="project-featured reveal">
+                <div class="project-terminal">
+                    <div class="terminal-bar">
+                        <div class="terminal-dots"><span></span><span></span><span></span></div>
+                        <span class="terminal-path mono"><i class="fas fa-folder" aria-hidden="true"></i> ~/projects/autonomous-robot</span>
+                        <span class="terminal-status active mono"><i class="fas fa-circle" aria-hidden="true"></i> in progress</span>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-left">
+                            <h3>Autonomous Mobile Robot System</h3>
+                            <p>Full-stack autonomous mobile robot built from scratch, leading a 3-member team. The system implements complete ROS2 navigation — SLAM Toolbox for real-time 2D mapping, Nav2 for global and local path planning, and multi-sensor fusion combining LiDAR and Kinect RGB-D data. Distributed control runs over a Zenoh router with Tailscale mesh VPN, enabling remote monitoring and teleoperation.</p>
+                            <div class="project-tags">
+                                <span>ROS2</span><span>Nav2</span><span>SLAM Toolbox</span><span>Jetson Nano</span>
+                                <span>LiDAR</span><span>Kinect RGB-D</span><span>Arduino Mega</span>
+                                <span>Zenoh</span><span>Tailscale</span><span>Python</span><span>C++</span>
+                            </div>
+                            <div class="project-meta">
+                                <span class="status-badge in-progress mono"><i class="fas fa-spinner" aria-hidden="true"></i> In Progress — Hardware Integration Phase</span>
+                                <a href="#" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> GitHub →</a>
+                            </div>
+                        </div>
+                        <div class="project-diagram">
+                            <div class="arch-diagram">
+                                <div class="arch-node sensor"><i class="fas fa-eye" aria-hidden="true"></i> LiDAR + Kinect<br />Sensor Layer</div>
+                                <div class="arch-arrow"><i class="fas fa-arrow-down" aria-hidden="true"></i></div>
+                                <div class="arch-node proc"><i class="fas fa-map" aria-hidden="true"></i> SLAM Toolbox<br />+ Nav2 Stack</div>
+                                <div class="arch-arrow"><i class="fas fa-arrow-down" aria-hidden="true"></i></div>
+                                <div class="arch-node act"><i class="fas fa-cogs" aria-hidden="true"></i> Motor Control<br />Arduino Mega</div>
+                                <div class="arch-cloud"><i class="fas fa-cloud" aria-hidden="true"></i> Zenoh + Tailscale<br />Remote Access</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-grid">
+                <div class="project-card reveal">
+                    <div class="terminal-bar">
+                        <div class="terminal-dots"><span></span><span></span><span></span></div>
+                        <span class="terminal-path mono"><i class="fas fa-folder" aria-hidden="true"></i> ~/projects/robowatch</span>
+                        <span class="terminal-status deployed mono"><i class="fas fa-check-circle" aria-hidden="true"></i> deployed</span>
+                    </div>
+                    <div class="pc-body">
+                        <h3>RoboWatch</h3>
+                        <p>Automated weekly robotics intelligence digest. Aggregates 20+ RSS and news sources, filters with Gemini Flash 2.5, and emails formatted HTML reports to subscribers every Friday covering industry updates, open scholarships, paper submission deadlines, and global competitions.</p>
+                        <div class="project-tags">
+                            <span>GitHub Actions</span><span>Gemini 2.5 Flash</span><span>Python</span><span>Gmail SMTP</span><span>RSS</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="status-badge deployed mono"><i class="fas fa-check" aria-hidden="true"></i> Live &amp; Running</span>
+                            <a href="https://github.com/sajid510/robowatch.git" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal reveal-delay-1">
+                    <div class="terminal-bar">
+                        <div class="terminal-dots"><span></span><span></span><span></span></div>
+                        <span class="terminal-path mono"><i class="fas fa-folder" aria-hidden="true"></i> ~/projects/team-dashboard</span>
+                        <span class="terminal-status deployed mono"><i class="fas fa-check-circle" aria-hidden="true"></i> live</span>
+                    </div>
+                    <div class="pc-body">
+                        <h3>AI Team Dashboard</h3>
+                        <p>Live robotics project monitoring dashboard for the 3-member team. Tracks individual and team progress, manages issues and to-dos, supports note-taking, and embeds a Groq-powered AI assistant for real-time implementation help. Backend runs on Firebase.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span><span>Firebase</span><span>Groq API</span><span>GitHub Pages</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="status-badge deployed mono"><i class="fas fa-check" aria-hidden="true"></i> Live</span>
+                            <a href="https://github.com/sajid510/robot-oda-dashboard.git" class="project-link" target="_blank" rel="noopener"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Visit →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal reveal-delay-2">
+                    <div class="terminal-bar">
+                        <div class="terminal-dots"><span></span><span></span><span></span></div>
+                        <span class="terminal-path mono"><i class="fas fa-folder" aria-hidden="true"></i> ~/projects/academic-ai</span>
+                        <span class="terminal-status deployed mono"><i class="fas fa-check-circle" aria-hidden="true"></i> active</span>
+                    </div>
+                    <div class="pc-body">
+                        <h3>Academic AI Automation</h3>
+                        <p>Multi-model AI pipeline that monitors Google Classroom for new course materials and auto-generates comprehensive engineering master notes using LoRA fine-tuning and Gemini Flash 2.5 — with special handling for EEE topics. Triggered on upload, outputs structured Word documents.</p>
+                        <div class="project-tags">
+                            <span>Python</span><span>Gemini 2.5 Flash</span><span>LoRA / PEFT</span><span>Google Classroom API</span><span>GitHub Actions</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="status-badge deployed mono"><i class="fas fa-check" aria-hidden="true"></i> Active</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal reveal-delay-3">
+                    <div class="terminal-bar">
+                        <div class="terminal-dots"><span></span><span></span><span></span></div>
+                        <span class="terminal-path mono"><i class="fas fa-folder" aria-hidden="true"></i> ~/projects/linkedin-ai-optimizer</span>
+                        <span class="terminal-status deployed mono"><i class="fas fa-check-circle" aria-hidden="true"></i> active</span>
+                    </div>
+                    <div class="pc-body">
+                        <h3>LinkedIn AI Optimizer</h3>
+                        <p>Fully automated AI-integrated LinkedIn management pipeline handling profile optimization, content writing, job discovery, and strategic connection building. Built entirely on free infrastructure: Gemini API, Google Scripts, Google Sheets, and a hosted web app.</p>
+                        <div class="project-tags">
+                            <span>Gemini API</span><span>Google Scripts</span><span>JavaScript</span><span>Google Sheets</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="status-badge deployed mono"><i class="fas fa-check" aria-hidden="true"></i> Active</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── RESEARCH ─── -->
+    <section id="research">
+        <div class="container">
+            <span class="section-tag mono reveal"><i class="fas fa-flask" aria-hidden="true"></i> research</span>
+            <h2 class="reveal">Active research and publication.</h2>
+
+            <div class="paper-card reveal">
+                <div class="paper-badge mono"><i class="fas fa-pen-fancy" aria-hidden="true"></i> Manuscript In Preparation</div>
+                <div class="paper-content">
+                    <h3>[Paper Title — Update Before Deploying]</h3>
+                    <span class="paper-authors mono"><i class="fas fa-user-edit" aria-hidden="true"></i> Sadnan Sajid · [Coauthors] · University of Asia Pacific, Bangladesh</span>
+                    <p class="paper-abstract">Research on autonomous mobile robot navigation integrating ROS2-based SLAM with AI-enhanced decision-making. The system addresses real-time mapping and navigation challenges using SLAM Toolbox, Nav2, and sensor fusion with LiDAR and RGB-D cameras on resource-constrained edge hardware (NVIDIA Jetson Nano). Evaluation focuses on map consistency under sensor noise and navigation performance in dynamic environments.</p>
+                    <div class="paper-tags">
+                        <span>Autonomous Navigation</span><span>SLAM</span><span>ROS2</span><span>Edge AI</span><span>Sensor Fusion</span><span>Jetson Nano</span>
+                    </div>
+                    <span class="paper-venue mono"><i class="fas fa-building-columns" aria-hidden="true"></i> Target venue: [IEEE / International Conference / Journal]</span>
+                </div>
+            </div>
+
+            <div class="research-areas">
+                <div class="ra-item reveal">
+                    <span class="ra-icon"><i class="fas fa-map" aria-hidden="true"></i></span>
+                    <div>
+                        <h4>Simultaneous Localization &amp; Mapping</h4>
+                        <p>Real-time 2D mapping with SLAM Toolbox on mobile robot platforms, with focus on loop closure and map consistency under sensor noise.</p>
+                    </div>
+                </div>
+                <div class="ra-item reveal reveal-delay-1">
+                    <span class="ra-icon"><i class="fas fa-microchip" aria-hidden="true"></i></span>
+                    <div>
+                        <h4>Edge AI for Autonomous Systems</h4>
+                        <p>Deploying vision inference pipelines (TensorRT, YOLOv11) on Jetson Nano for real-time perception within strict compute and power constraints.</p>
+                    </div>
+                </div>
+                <div class="ra-item reveal reveal-delay-2">
+                    <span class="ra-icon"><i class="fas fa-robot" aria-hidden="true"></i></span>
+                    <div>
+                        <h4>AI-Integrated Automation Pipelines</h4>
+                        <p>Agentic AI systems automating research workflows — from paper discovery and digest generation to academic note synthesis with RAG.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── EDUCATION ─── -->
+    <section id="education">
+        <div class="container">
+            <span class="section-tag mono reveal"><i class="fas fa-graduation-cap" aria-hidden="true"></i> education &amp; timeline</span>
+            <h2 class="reveal">Where I've been and what I've built.</h2>
+            <div class="timeline">
+                <div class="tl-item reveal">
+                    <div class="tl-dot"></div>
+                    <div class="tl-content">
+                        <span class="tl-date mono"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 2022 — Present</span>
+                        <h4>BSc in Electrical &amp; Electronic Engineering</h4>
+                        <p>University of Asia Pacific, Dhaka, Bangladesh</p>
+                        <p>Focused on embedded systems, signal processing, and applied AI in engineering contexts. Year 3 with active research running in parallel with coursework.</p>
+                    </div>
+                </div>
+                <div class="tl-item reveal reveal-delay-1">
+                    <div class="tl-dot"></div>
+                    <div class="tl-content">
+                        <span class="tl-date mono"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 2023 — Present</span>
+                        <h4>Team Leader — Autonomous Robotics Research Group</h4>
+                        <p>University of Asia Pacific</p>
+                        <p>Leading a 3-member team on full hardware and software development of an autonomous mobile robot. Responsible for system architecture, research direction, task delegation, and the current paper in preparation.</p>
+                    </div>
+                </div>
+                <div class="tl-item reveal reveal-delay-2">
+                    <div class="tl-dot"></div>
+                    <div class="tl-content">
+                        <span class="tl-date mono"><i class="fas fa-calendar-alt" aria-hidden="true"></i> 2024</span>
+                        <h4>IEEE &amp; International Robotics Competitions</h4>
+                        <p>Regional and International Venues</p>
+                        <p>Competed in IEEE-affiliated regional and international robotics challenges as team leader, including competitions at IEEE Region 10 and other venues.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── CONTACT ─── -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-inner">
+                <div class="contact-text reveal">
+                    <span class="section-tag mono"><i class="fas fa-paper-plane" aria-hidden="true"></i> contact</span>
+                    <h2>Let's build something that moves.</h2>
+                    <p>I'm actively seeking <strong>fully funded MSc or Research Assistant positions</strong> in robotics, autonomous systems, and embedded AI for 2027–28. If your lab works on any of these, I'd like to connect.</p>
+                    <div class="contact-links">
+                        <a href="mailto:sadnansajid555@gmail.com" class="c-link">
+                            <i class="fas fa-envelope" aria-hidden="true"></i> sadnansajid555@gmail.com
+                        </a>
+                        <a href="https://github.com/sajid510" class="c-link" target="_blank" rel="noopener">
+                            <i class="fab fa-github" aria-hidden="true"></i> github.com/sajid510
+                        </a>
+                        <a href="https://linkedin.com/in/sadnan-sajid/" class="c-link" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i> linkedin.com/in/sadnan-sajid/
+                        </a>
+                    </div>
+                </div>
+                <div class="coords-box reveal reveal-delay-1">
+                    <span class="mono" style="font-size:10px;color:#556677;letter-spacing:0.1em;text-transform:uppercase">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Current Location
+                    </span>
+                    <div class="coords-name">Dhaka, Bangladesh</div>
+                    <span class="coords-ll mono"><i class="fas fa-globe" aria-hidden="true"></i> 23.8103° N · 90.4125° E</span>
+                    <span class="coords-seeking mono"><i class="fas fa-plane" aria-hidden="true"></i> Open to remote / relocation</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer>
+        <div class="container footer-inner">
+            <span class="mono"><i class="fas fa-code" aria-hidden="true"></i> Sadnan · EEE @ UAP Bangladesh · Built with plain HTML/CSS/JS</span>
+            <span class="mono">© 2026</span>
+        </div>
+    </footer>
+
+    <!-- ─── JAVASCRIPT ─── -->
+    <script src="js/script.js"></script>
+</body>
+</html>
