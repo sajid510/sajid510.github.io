@@ -4,16 +4,16 @@ This repository contains the source code for my personal academic and research w
 
 ## Structure
 
-- `index.html` – main entry point
+- `index.html` – main entry point (all sections)
 - `css/style.css` – all styling
-- `js/script.js` – interactivity (navigation, scroll effects, LiDAR canvas animation)
-- `images/` – placeholder for profile and hero images
-- `assets/` – place your CV and certificates here (PDF)
-- `favicon.ico` – site favicon
+- `js/script.js` – interactivity (mobile nav, scroll effects, LiDAR canvas animation)
+- `favicon.png` – site favicon
+- `README.md` – this file
 
 ## Features
 
 - Fully responsive design
+- Mobile hamburger navigation
 - Interactive LiDAR point‑cloud animation on the hero section
 - Smooth scroll and active navigation highlighting
 - Scroll‑reveal animations

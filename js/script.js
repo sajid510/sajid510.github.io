@@ -5,6 +5,22 @@ window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 20);
 }, { passive: true });
 
+// ─── MOBILE NAV TOGGLE ───
+const navToggle = document.getElementById('nav-toggle');
+const mobileNav = document.getElementById('nav-links');
+if (navToggle && mobileNav) {
+    navToggle.addEventListener('click', () => {
+        const open = mobileNav.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', String(open));
+    });
+    mobileNav.querySelectorAll('a').forEach((a) => {
+        a.addEventListener('click', () => {
+            mobileNav.classList.remove('open');
+            navToggle.setAttribute('aria-expanded', 'false');
+        });
+    });
+}
+
 // ─── ACTIVE NAV LINK ON SCROLL ───
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-links a[data-section]');
