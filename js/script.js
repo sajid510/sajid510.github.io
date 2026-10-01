@@ -21,6 +21,31 @@ if (navToggle && mobileNav) {
     });
 }
 
+// ─── CV DROPDOWN TOGGLE ───
+const cvDropdownToggle = document.getElementById('cv-dropdown-toggle');
+const cvDropdownMenu = document.getElementById('cv-dropdown-menu');
+if (cvDropdownToggle && cvDropdownMenu) {
+    cvDropdownToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const open = cvDropdownMenu.classList.toggle('open');
+        cvDropdownToggle.setAttribute('aria-expanded', String(open));
+    });
+    // Close when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!cvDropdownMenu.contains(e.target) && e.target !== cvDropdownToggle) {
+            cvDropdownMenu.classList.remove('open');
+            cvDropdownToggle.setAttribute('aria-expanded', 'false');
+        }
+    });
+    // Close when clicking a dropdown item
+    cvDropdownMenu.querySelectorAll('a').forEach((a) => {
+        a.addEventListener('click', () => {
+            cvDropdownMenu.classList.remove('open');
+            cvDropdownToggle.setAttribute('aria-expanded', 'false');
+        });
+    });
+}
+
 // ─── ACTIVE NAV LINK ON SCROLL ───
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-links a[data-section]');
