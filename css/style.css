@@ -80,6 +80,9 @@ nav.scrolled {
   border-color: var(--border);
   backdrop-filter: blur(12px);
 }
+nav.hidden {
+  transform: translateY(-100%);
+}
 .nav-inner {
   max-width: 1080px;
   width: 100%;

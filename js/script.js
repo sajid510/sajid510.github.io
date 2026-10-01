@@ -1,8 +1,16 @@
 // ─── NAV SCROLL EFFECT ───
 const nav = document.getElementById('main-nav');
 
+let lastScrollY = 0;
 window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 20);
+    const currentScrollY = window.scrollY;
+    nav.classList.toggle('scrolled', currentScrollY > 20);
+    if (currentScrollY > 100 && currentScrollY > lastScrollY) {
+        nav.classList.add('hidden');
+    } else {
+        nav.classList.remove('hidden');
+    }
+    lastScrollY = currentScrollY;
 }, { passive: true });
 
 // ─── MOBILE NAV TOGGLE ───
