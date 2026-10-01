@@ -1099,7 +1099,9 @@ section h2 {
 
 /* RESEARCH LINK BOX */
 .research-link-box {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
 }
 .research-link {
   display: inline-flex;
@@ -1115,6 +1117,28 @@ section h2 {
 }
 .research-link:hover {
   background: var(--accent-glow);
+}
+.research-link-prominent {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 14px 28px;
+  background: var(--accent-glow);
+  border-color: var(--accent-border);
+}
+.research-link-prominent:hover {
+  background: rgba(0, 212, 255, 0.18);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.15);
+}
+
+/* ABOUT RESEARCH LINK */
+.about-research-link {
+  color: var(--accent);
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+.about-research-link:hover {
+  opacity: 0.75;
+  text-decoration: underline;
 }
 
 /* PAPER VENUES */
