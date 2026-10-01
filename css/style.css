@@ -639,6 +639,12 @@ section h2 {
 .project-link:hover {
   opacity: 0.75;
 }
+.project-link-video {
+  color: #ff0000;
+}
+.project-link-video:hover {
+  opacity: 0.75;
+}
 .project-diagram {
   background: var(--bg3);
   border-left: 1px solid var(--border);
